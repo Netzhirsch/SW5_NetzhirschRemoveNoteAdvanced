@@ -7,6 +7,7 @@ use Enlight_View_Default;
 use Shopware\Bundle\CookieBundle\CookieGroupCollection;
 use Shopware\Bundle\CookieBundle\Structs\CookieGroupStruct;
 use Shopware\Components\Plugin;
+use Shopware\Components\Plugin\Context\UninstallContext;
 
 class NetzhirschRemoveNoteAdvanced extends Plugin
 {
@@ -61,4 +62,11 @@ class NetzhirschRemoveNoteAdvanced extends Plugin
 
         return $pluginDir;
     }
+
+	public function uninstall(UninstallContext $context)
+	{
+		if ($context->getPlugin()->getActive()) {
+			$context->scheduleClearCache(UninstallContext::CACHE_LIST_DEFAULT);
+		}
+	}
 }
