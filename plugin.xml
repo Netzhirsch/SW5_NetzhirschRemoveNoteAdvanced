@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label>Remove notepad advanced (incl. Cookie Consent)</label>
+    <label lang="de">Merkzettel entfernen Advanced (inkl. cookie consent)</label>
+    <version>1.0.0</version>
+    <compatibility minVersion="5.2.0" />
+    <copyright>(c) by Netzhirsch GbR</copyright>
+    <license>proprietary</license>
+    <link>https://www.netzhirsch.de</link>
+    <author>Netzhirsch GbR</author>
+    <description>
+        <![CDATA[
+        Remove the notepad function completely from your shop. The associated cookie will also be removed from the cookie consent tool and therefore no longer set.
+        ]]>
+    </description>
+    <description lang="de">
+        <![CDATA[
+        Entfernt die Merkzettel-Funktion komplett aus Ihrem Shop. Auch das dazugehörige Cookie wird aus dem Cookie Consent Tool entfernt und folglich nicht mehr gesetzt.
+        ]]>
+    </description>
+    <changelog version="1.0.0">
+        <changes lang="de">Erstveröffentlichung</changes>
+        <changes>Initial release</changes>
+    </changelog>
+</plugin>
